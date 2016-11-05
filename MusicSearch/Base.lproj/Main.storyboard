@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FmZ-Yd-dQl">
+                                <rect key="frame" x="14" y="107" width="380" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRm-eu-EPa">
+                                <rect key="frame" x="14" y="169" width="380" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.50623445420488777" blue="0.50145393109833369" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchTitleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ji3-rl-TgE"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XyB-sa-NaH">
+                                <rect key="frame" x="14" y="234" width="386" height="340"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="BzT-aq-wT8">
+                                <rect key="frame" x="188" y="602" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="1" green="0.5249244006166971" blue="0.55874475730595807" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iTunes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VP-6g-eIn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
+                                <color key="backgroundColor" red="0.12609614860088869" green="0.62772030755423724" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2VP-6g-eIn" secondAttribute="height" multiplier="414:79" id="11B-kJ-LGn"/>
+                                    <constraint firstAttribute="height" constant="79" id="1Qz-SB-sal"/>
+                                    <constraint firstAttribute="width" constant="414" id="S4R-DE-vnx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vRm-eu-EPa" firstAttribute="top" secondItem="FmZ-Yd-dQl" secondAttribute="bottom" constant="32" id="0Yz-AW-nDc"/>
+                            <constraint firstItem="FmZ-Yd-dQl" firstAttribute="top" secondItem="2VP-6g-eIn" secondAttribute="bottom" constant="28" id="53I-US-6VG"/>
+                            <constraint firstItem="BzT-aq-wT8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="168" id="5Wb-hw-JgA"/>
+                            <constraint firstItem="BzT-aq-wT8" firstAttribute="top" secondItem="XyB-sa-NaH" secondAttribute="bottom" constant="28" id="7PB-W5-fWH"/>
+                            <constraint firstItem="FmZ-Yd-dQl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-6" id="FJV-qr-Lmp"/>
+                            <constraint firstItem="2VP-6g-eIn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ISS-Mk-7nd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vRm-eu-EPa" secondAttribute="trailing" id="ITi-oe-k4Y"/>
+                            <constraint firstItem="2VP-6g-eIn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VrO-Dv-RKg"/>
+                            <constraint firstItem="vRm-eu-EPa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-6" id="aNR-Xc-Mu5"/>
+                            <constraint firstItem="XyB-sa-NaH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-6" id="am5-Fn-cB3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BzT-aq-wT8" secondAttribute="trailing" constant="167" id="g3a-Wj-lu7"/>
+                            <constraint firstItem="FmZ-Yd-dQl" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nke-nc-D6k"/>
+                            <constraint firstItem="XyB-sa-NaH" firstAttribute="top" secondItem="vRm-eu-EPa" secondAttribute="bottom" constant="35" id="s1B-07-H5E"/>
+                            <constraint firstItem="BzT-aq-wT8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="582" id="sZx-gT-pV0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XyB-sa-NaH" secondAttribute="trailing" constant="-6" id="t7A-bU-NQ2"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="pageIndicator" destination="BzT-aq-wT8" id="9d6-vT-WF4"/>
+                        <outlet property="scrollView" destination="XyB-sa-NaH" id="8Li-R0-nE1"/>
+                        <outlet property="titleTextField" destination="FmZ-Yd-dQl" id="mNJ-Io-Wec"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="-112"/>
+        </scene>
+    </scenes>
+</document>

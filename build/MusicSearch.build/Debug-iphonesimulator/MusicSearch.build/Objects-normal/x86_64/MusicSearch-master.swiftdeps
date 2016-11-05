@@ -1,0 +1,9 @@
+version: "Apple Swift version 2.3 (swiftlang-800.10.12 clang-800.0.38)"
+options: "45864d8bc04d879946d332489a03105e"
+build_time: [531703662, 323510000]
+inputs:
+  "/Users/akhiltirumalasetty/Documents/MusicSearch/MusicSearch/ItunesConnection.swift": [528151280, 0]
+  "/Users/akhiltirumalasetty/Documents/MusicSearch/MusicSearch/ViewController.swift": [531703283, 0]
+  "/Users/akhiltirumalasetty/Documents/MusicSearch/MusicSearch/AppDelegate.swift": [528134353, 0]
+  "/Users/akhiltirumalasetty/Documents/MusicSearch/MusicSearch/MusicView.swift": [528152425, 0]
+  "/Users/akhiltirumalasetty/Documents/MusicSearch/MusicSearch/Album.swift": [528138001, 0]

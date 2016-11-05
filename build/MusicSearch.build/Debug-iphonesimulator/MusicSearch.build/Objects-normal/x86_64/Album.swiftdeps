@@ -1,0 +1,98 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Album"
+provides-nominal:
+- "C11MusicSearch5Album"
+provides-member:
+- ["C11MusicSearch5Album", ""]
+provides-dynamic-lookup:
+- "title"
+- "genre"
+- "artist"
+- "artWorkURL"
+depends-top-level:
+- "NSObject"
+- "String"
+- "Album"
+- !private "StringLiteralType"
+depends-member:
+- ["C11MusicSearch5Album", "String"]
+- ["C11MusicSearch5Album", "artWorkURL"]
+- ["C11MusicSearch5Album", "artist"]
+- ["C11MusicSearch5Album", "deinit"]
+- ["C11MusicSearch5Album", "genre"]
+- ["C11MusicSearch5Album", "init"]
+- ["C11MusicSearch5Album", "title"]
+- ["Ps9AnyObject", "artWorkURL"]
+- ["Ps9AnyObject", "artist"]
+- ["Ps9AnyObject", "genre"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "title"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "artWorkURL"]
+- ["Ps11CVarArgType", "artist"]
+- ["Ps11CVarArgType", "genre"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "title"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "artWorkURL"]
+- ["Ps28CustomDebugStringConvertible", "artist"]
+- ["Ps28CustomDebugStringConvertible", "genre"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "title"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "artWorkURL"]
+- ["Ps23CustomStringConvertible", "artist"]
+- ["Ps23CustomStringConvertible", "genre"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "title"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "artWorkURL"]
+- ["Ps9Equatable", "artist"]
+- ["Ps9Equatable", "genre"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "title"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "artWorkURL"]
+- ["Ps8Hashable", "artist"]
+- ["Ps8Hashable", "genre"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "title"]
+- ["Ps8Hashable", ""]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "artWorkURL"]
+- ["CSo8NSObject", "artist"]
+- ["CSo8NSObject", "genre"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "title"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "artWorkURL"]
+- ["PSo16NSObjectProtocol", "artist"]
+- ["PSo16NSObjectProtocol", "genre"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "title"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Vs12StaticString", "deinit"]
+depends-nominal:
+- "C11MusicSearch5Album"
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Vs12StaticString"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+interface-hash: "2de6e354c8fd055dd0969292bc7ec0f2"
